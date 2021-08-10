@@ -13,5 +13,5 @@
 
   (= (my-count '(13)) 1)
 
-  (= (my-count '(:a :b :c)) 3)g
+  (= (my-count '(:a :b :c)) 3)
   )
