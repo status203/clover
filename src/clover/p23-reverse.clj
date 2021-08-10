@@ -2,10 +2,10 @@
 
 (defn my-reverse
   [s]
-  (concat (my-reverse (rest s)) [(first s)]))
+  (reduce (fn [acc v] (cons v acc)) () s))
 
 (comment
-  (my-reverse (range 1000))
+  (my-reverse (range 100000))
 
   (= (my-reverse [1 2 3 4 5]) [5 4 3 2 1])
 
